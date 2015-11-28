@@ -10,12 +10,11 @@ element.parentNode.removeChild(element);
 }
 
 //initial variables + getRandom function
-var people = ['lili','tessa','pepe']
+var people = ['lili','tessa','pepe','grand-maman','grand-papa','vincent','philippe','genevieve','alexis','laurence']
 var copyOfPeople = people.slice();
 
 var newPerson;
 var getRandom = function(){
-
   newPerson = people[Math.floor(Math.random()*people.length)];
   var index = people.indexOf(newPerson);
   people.splice(index, 1);
@@ -33,25 +32,18 @@ for (z = 0; z < letters.length; z++) {
   newLetter.id = letters[z];
   newLetter.innerHTML = letters[z].toUpperCase();
   document.getElementById('letters').appendChild(newLetter);
-  console.log(newLetter);
   //click fct - check if right letter is clicked
   newLetter.onclick = function() {
     newPerson.setNext();
     if (next.toLowerCase() == this.id){
       document.getElementById(nextOrder).style.color="black";
       nextOrder++;
-      $('#blankSquares').fadeIn('slow',function(){
       newPerson.printHint();        
-      })
       //add animation, sound...
       if (nextOrder==numberOfLetters){
-        console.log ('win!')
-        console.log(newPerson.image)
         document.getElementById('photo').style.backgroundImage=newPerson.image;
         document.getElementById('encore').style.visibility="visible";
         document.getElementById('letterSection').style.visibility="hidden";
-        console.log(people);
-        console.log(copyOfPeople);
           if (people.length === 0 ){
     people = copyOfPeople;
     copyOfPeople = people.slice();
@@ -94,7 +86,6 @@ while (myNode.firstChild) {
         var newBlank = document.createElement('div');
         newBlank.className = "blanks";
         newBlank.id = positions[x];
-        console.log(newBlank.id)
         document.getElementById('blankSquares').appendChild(newBlank);
       }
     }

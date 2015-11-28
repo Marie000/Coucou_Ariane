@@ -3,30 +3,32 @@
 	{
 		"selected_items":
 		[
+			[
+				"blank",
+				"blankSquares"
+			],
+			[
+				"inlin",
+				"inline-block"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<html>\n<head>\n	<title>Coucou Ariane!</title>\n<link href='https://fonts.googleapis.com/css?family=Short+Stack' rel='stylesheet' type='text/css'>\n <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n</head>\n<body>\n<div id=\"before\">\n  <button id=\"jouer\">JOUER!</button>\n</div>\n<div id=\"main\">\n<h1>Coucou! Qui est là?</h1>\n\n<div id = \"blankSquares\">\n</div>\n<div id=\"photo\"></div>\n\n\n<div id=\"letters\">\n</div>\n</div>\n</body>\n <script src=\"script.js\"></script> \n</html>",
 			"file": "index.html",
-			"file_size": 335,
-			"file_write_time": 130926669127467632,
 			"settings":
 			{
-				"buffer_size": 467,
+				"buffer_size": 733,
 				"line_ending": "Windows",
 				"name": "<html>"
 			}
 		},
 		{
-			"contents": "body {\n  font-family: 'Short Stack', cursive;\n  text-align:center;\n  background-image:url('http://i43.photobucket.com/albums/e387/jennibu1/Blog%20Stuff/background-1.jpg');\n  background-size:100%;\n}\n\n.blanks {\n  width:40px;\n  height:40px;\n  background-color:white;\n  margin:10px;\n  float:center;\n  display:inline-block;\n  opacity:0.8;\n  border-radius:10px;\n  font-size:15px;\n}\n\n.letter {\n  width:30px;\n  height:30px;\n  background-color:pink;\n  margin:5px;\n  border-radius:50%;\n  text-align:center;\n  border:none;\n  font-size:20px;\n}\nh1 {\n  text-align:center;\n  background-color:white;\n  opacity:0.8;\n  margin:20px 20%;\n  padding:20px;\n  border-radius:20px;\n}\n#before {\n  text-align:center;\n}\n#jouer {\n  width:200px;\n  height:100px;\n  display:inline-block;\n  margin:200px;\n  border-radius:20px;\n  font-size:40px;\n}\n#photo {\n  width:300px;\n  height:200px;\n  background-color:black;\n  background-size:cover;\n  display:inline-block;\n  border-radius:25px;\n  opacity:0.8;\n}",
 			"file": "style.css",
-			"file_size": 0,
-			"file_write_time": 130926671937628413,
 			"settings":
 			{
-				"buffer_size": 966,
+				"buffer_size": 1548,
 				"line_ending": "Windows"
 			}
 		},
@@ -34,7 +36,7 @@
 			"file": "script.js",
 			"settings":
 			{
-				"buffer_size": 2216,
+				"buffer_size": 3978,
 				"line_ending": "Windows"
 			}
 		}
@@ -87,6 +89,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Marie/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/Marie/Documents/RandomQuoteGenerator/index.html",
 		"/C/Users/Marie/Documents/RandomQuoteGenerator/random-quote-generator.sublime-project",
 		"/C/Users/Marie/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -95,7 +98,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -109,6 +112,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"marie",
+			"letters",
+			"playagain",
+			"letterSection",
+			"1",
+			"f12"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -126,7 +135,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -134,15 +143,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 467,
+						"buffer_size": 733,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								467,
-								467
+								310,
+								310
 							]
 						],
 						"settings":
@@ -251,15 +260,15 @@
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 966,
+						"buffer_size": 1548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								475,
-								475
+								1402,
+								1402
 							]
 						],
 						"settings":
@@ -359,7 +368,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 1051.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -369,15 +378,15 @@
 					"file": "script.js",
 					"settings":
 					{
-						"buffer_size": 2216,
+						"buffer_size": 3978,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1691,
-								1691
+								0,
+								0
 							]
 						],
 						"settings":
@@ -474,10 +483,11 @@
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
